@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5269E4BC1FD5EACE0068D2F5 /* iconJointech.png in Resources */ = {isa = PBXBuildFile; fileRef = 5269E4BA1FD5EACD0068D2F5 /* iconJointech.png */; };
+		52BDD0431FD51F7B004EEDEE /* Knee Icon.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 52BDD0411FD51F7B004EEDEE /* Knee Icon.PNG */; };
 		52E1A61A1FCFC235004A2402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A6191FCFC235004A2402 /* AppDelegate.swift */; };
 		52E1A61C1FCFC235004A2402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A61B1FCFC235004A2402 /* ViewController.swift */; };
 		52E1A61F1FCFC235004A2402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E1A61D1FCFC235004A2402 /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 		52E1A6271FCFC235004A2402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E1A6251FCFC235004A2402 /* LaunchScreen.storyboard */; };
 		52E1A6321FCFC235004A2402 /* JoinTechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A6311FCFC235004A2402 /* JoinTechTests.swift */; };
 		52E1A63D1FCFC235004A2402 /* JoinTechUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A63C1FCFC235004A2402 /* JoinTechUITests.swift */; };
+		52E1A6531FCFC280004A2402 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E1A6501FCFC272004A2402 /* Charts.framework */; };
+		52E1A6541FCFC280004A2402 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52E1A6501FCFC272004A2402 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52E1A6591FCFD4A6004A2402 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A6581FCFD4A6004A2402 /* StartUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +37,46 @@
 			remoteGlobalIDString = 52E1A6151FCFC235004A2402;
 			remoteInfo = JoinTech;
 		};
+		52E1A64F1FCFC272004A2402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E1A64A1FCFC272004A2402 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		52E1A6511FCFC272004A2402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E1A64A1FCFC272004A2402 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		52E1A6551FCFC280004A2402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E1A64A1FCFC272004A2402 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		52E1A6571FCFC281004A2402 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				52E1A6541FCFC280004A2402 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5269E4BA1FD5EACD0068D2F5 /* iconJointech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconJointech.png; path = ../../iconJointech.png; sourceTree = "<group>"; };
+		52BDD0411FD51F7B004EEDEE /* Knee Icon.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Knee Icon.PNG"; path = "../../../Downloads/Knee Icon.PNG"; sourceTree = "<group>"; };
 		52E1A6161FCFC235004A2402 /* JoinTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoinTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E1A6191FCFC235004A2402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52E1A61B1FCFC235004A2402 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +91,8 @@
 		52E1A6381FCFC235004A2402 /* JoinTechUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoinTechUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E1A63C1FCFC235004A2402 /* JoinTechUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTechUITests.swift; sourceTree = "<group>"; };
 		52E1A63E1FCFC235004A2402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E1A64A1FCFC272004A2402 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-3.0.4/Charts.xcodeproj"; sourceTree = "<group>"; };
+		52E1A6581FCFD4A6004A2402 /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E1A6531FCFC280004A2402 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +144,16 @@
 		52E1A6181FCFC235004A2402 /* JoinTech */ = {
 			isa = PBXGroup;
 			children = (
+				52E1A64A1FCFC272004A2402 /* Charts.xcodeproj */,
 				52E1A6191FCFC235004A2402 /* AppDelegate.swift */,
+				5269E4BA1FD5EACD0068D2F5 /* iconJointech.png */,
 				52E1A61B1FCFC235004A2402 /* ViewController.swift */,
+				52E1A6581FCFD4A6004A2402 /* StartUpViewController.swift */,
 				52E1A61D1FCFC235004A2402 /* Main.storyboard */,
 				52E1A6231FCFC235004A2402 /* Assets.xcassets */,
 				52E1A6251FCFC235004A2402 /* LaunchScreen.storyboard */,
 				52E1A6281FCFC235004A2402 /* Info.plist */,
+				52BDD0411FD51F7B004EEDEE /* Knee Icon.PNG */,
 				52E1A6201FCFC235004A2402 /* JoinTech.xcdatamodeld */,
 			);
 			path = JoinTech;
@@ -128,6 +177,15 @@
 			path = JoinTechUITests;
 			sourceTree = "<group>";
 		};
+		52E1A64B1FCFC272004A2402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52E1A6501FCFC272004A2402 /* Charts.framework */,
+				52E1A6521FCFC272004A2402 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +196,12 @@
 				52E1A6121FCFC235004A2402 /* Sources */,
 				52E1A6131FCFC235004A2402 /* Frameworks */,
 				52E1A6141FCFC235004A2402 /* Resources */,
+				52E1A6571FCFC281004A2402 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				52E1A6561FCFC280004A2402 /* PBXTargetDependency */,
 			);
 			name = JoinTech;
 			productName = JoinTech;
@@ -221,6 +281,12 @@
 			mainGroup = 52E1A60D1FCFC235004A2402;
 			productRefGroup = 52E1A6171FCFC235004A2402 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 52E1A64B1FCFC272004A2402 /* Products */;
+					ProjectRef = 52E1A64A1FCFC272004A2402 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				52E1A6151FCFC235004A2402 /* JoinTech */,
@@ -230,11 +296,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		52E1A6501FCFC272004A2402 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 52E1A64F1FCFC272004A2402 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52E1A6521FCFC272004A2402 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 52E1A6511FCFC272004A2402 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		52E1A6141FCFC235004A2402 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5269E4BC1FD5EACE0068D2F5 /* iconJointech.png in Resources */,
+				52BDD0431FD51F7B004EEDEE /* Knee Icon.PNG in Resources */,
 				52E1A6271FCFC235004A2402 /* LaunchScreen.storyboard in Resources */,
 				52E1A6241FCFC235004A2402 /* Assets.xcassets in Resources */,
 				52E1A61F1FCFC235004A2402 /* Main.storyboard in Resources */,
@@ -262,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E1A6591FCFD4A6004A2402 /* StartUpViewController.swift in Sources */,
 				52E1A61C1FCFC235004A2402 /* ViewController.swift in Sources */,
 				52E1A6221FCFC235004A2402 /* JoinTech.xcdatamodeld in Sources */,
 				52E1A61A1FCFC235004A2402 /* AppDelegate.swift in Sources */,
@@ -296,6 +382,11 @@
 			isa = PBXTargetDependency;
 			target = 52E1A6151FCFC235004A2402 /* JoinTech */;
 			targetProxy = 52E1A6391FCFC235004A2402 /* PBXContainerItemProxy */;
+		};
+		52E1A6561FCFC280004A2402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 52E1A6551FCFC280004A2402 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -429,6 +520,7 @@
 		52E1A6421FCFC235004A2402 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U57BQ7LWFP;
@@ -444,6 +536,7 @@
 		52E1A6431FCFC235004A2402 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U57BQ7LWFP;
