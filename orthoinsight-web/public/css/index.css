@@ -1,0 +1,64 @@
+body,html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+.min-100 {
+  min-height: 100vh;
+}
+
+.min-90 {
+  min-height: 90vh;
+}
+
+.min-10 {
+  min-height: 10vh;
+}
+
+
+
+#leftnav .nav-link.active,
+#leftnav .nav-link:hover,
+#leftnavu .nav-link:focus{
+  color: #111;
+  border-bottom: 1px #000 solid;
+  border-top: 1px #000 solid;
+}
+
+#leftnav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #e9ecef;
+}
+#dashboard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background: white;
+}
+
+.anchor{
+display: block;
+height: 70px;
+margin-top: -70px;
+visibility: hidden;
+}
+
+#content .nav-link {
+  color: #555;
+  transition: all 0.2 ease;
+}
+
+footer a {
+  color: #ccc;
+  position: fixed;
+}
+footer a:hover,
+footer a:focus{
+  color: #eee;
+}
