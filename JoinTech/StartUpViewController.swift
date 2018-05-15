@@ -10,19 +10,22 @@ import UIKit
 
 class StartUpViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var connectButton: UIButton!
-    @IBOutlet weak var idTextField: UITextField!
-    @IBOutlet weak var infoViewContainer: UIView!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        infoViewContainer.layer.cornerRadius = 10
-        infoViewContainer.layer.masksToBounds = true
-        connectButton.layer.cornerRadius = 25
-        connectButton.layer.masksToBounds = true
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(noti:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-
+        signUpButton.layer.cornerRadius = 25
+        signUpButton.layer.masksToBounds = true
+        loginButton.layer.cornerRadius = 25
+        loginButton.layer.masksToBounds = true
+      
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.object(forKey: "user_id") != nil {
+            self.performSegue(withIdentifier: "StartUpToMain", sender: self)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,22 +33,13 @@ class StartUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    deinit {
-        NotificationCenter.default.removeObserver(self)
+    @IBAction func loginHit(_ sender: Any) {
     }
     
-    @objc func keyboardWillShow(noti: Notification) {
-        
-        guard let userInfo = noti.userInfo else { return }
-        guard var keyboardFrame: CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else { return }
-        keyboardFrame = self.view.convert(keyboardFrame, from: nil)
-        
-        var contentInset:UIEdgeInsets = scrollView.contentInset
-        contentInset.bottom = keyboardFrame.size.height + 80
-        scrollView.contentInset = contentInset
+    @IBAction func signUpHit(_ sender: Any) {
     }
     
-
+    
     /*
     // MARK: - Navigation
 
